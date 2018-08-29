@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2047
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AWM_Scraper", "AWM_Scraper\AWM_Scraper.csproj", "{F270352A-BBD7-4368-ACBB-32BB9C4865E6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F270352A-BBD7-4368-ACBB-32BB9C4865E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F270352A-BBD7-4368-ACBB-32BB9C4865E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F270352A-BBD7-4368-ACBB-32BB9C4865E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F270352A-BBD7-4368-ACBB-32BB9C4865E6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0484C97D-0A11-44BF-8107-8F3BFCE7188D}
+	EndGlobalSection
+EndGlobal
