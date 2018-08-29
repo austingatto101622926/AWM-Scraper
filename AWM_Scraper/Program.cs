@@ -12,14 +12,14 @@ namespace AWM_Scraper
         static void Main(string[] args)
         {
             string baseAddress = "https://www.awm.gov.au/";
-            int page = 162;
+            int page = 1;
             int ppp = 5000;
 
             int count = 0;
 
             HtmlAgilityPack.HtmlWeb web = new HtmlAgilityPack.HtmlWeb();
-            System.IO.StreamWriter file = new System.IO.StreamWriter(@"C:\Users\STUDENT\list3.txt");
-            //file.AutoFlush = true;
+            System.IO.StreamWriter file = new System.IO.StreamWriter(@"C:\Users\STUDENT\desktop\FinalList.txt");
+            file.AutoFlush = true;
 
             while (page < 163)
             {
@@ -36,16 +36,17 @@ namespace AWM_Scraper
                         name = name.Replace("&#039;", "'");
                         string link = listings[i].Attributes.First().Value;
                         string entry = $"{name}\t{link}";
-                        entries.Add(entry);
+                        file.WriteLine(entry);
+                        Console.WriteLine(entry);
                         count++;
                     }
-
+                    /*
                     for (int i = 0; i < entries.Count; i++)
                     {
                         Console.WriteLine(entries[i]);
                         file.WriteLine(entries[i]);
-                    
                     }
+                    */
                     page++;
                 }
                 Console.WriteLine(count);
