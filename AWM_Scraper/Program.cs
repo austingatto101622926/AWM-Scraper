@@ -25,6 +25,7 @@ namespace AWM_Scraper
             {
                 List<string> entries = new List<string>();
                 HtmlAgilityPack.HtmlDocument doc = web.Load($"{baseAddress}advanced-search?query=&people=true&facet_related_conflict_sort=8%3AFirst+World+War%2C+1914-1918&page={page}&ppp={ppp}");
+                //If the above fails, the site may have crashed
 
                 var listings = doc.DocumentNode.SelectNodes("//h3[@class='listing__title']/a");
                 if (listings != null)
@@ -43,6 +44,7 @@ namespace AWM_Scraper
                     {
                         Console.WriteLine(entries[i]);
                         file.WriteLine(entries[i]);
+                    
                     }
                     page++;
                 }
